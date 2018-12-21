@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.qm.project</groupId>
-    <artifactId>template-client</artifactId>
+    <artifactId>laoxiang-client</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <distributionManagement>

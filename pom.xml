@@ -33,26 +33,26 @@
         <lombok.version>1.16.22</lombok.version>
         <logback-classic.version>1.2.3</logback-classic.version>
         <jcl-over-slf4j.version>1.7.25</jcl-over-slf4j.version>
-        <jul-to-slf4j.version>1.7.25</jul-to-slf4j.version>
+        <jul-to-slf4j.version>1.7.21</jul-to-slf4j.version>
         <log4j-over-slf4j.version>1.7.25</log4j-over-slf4j.version>
         <!-- 内部 -->
     </properties>
 
     <groupId>com.qm.project</groupId>
-    <artifactId>template-server</artifactId>
+    <artifactId>laoxiang-server</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>template-client</module>
-        <module>template-dao</module>
-        <module>template-service</module>
-        <module>template-worker</module>
-        <module>template-soa</module>
-        <module>template-es</module>
-        <module>template-cache</module>
-        <module>template-common</module>
-        <module>template-domain</module>
-        <module>template-api</module>
-        <module>template-man</module>
+        <module>laoxiang-client</module>
+        <module>laoxiang-dao</module>
+        <module>laoxiang-service</module>
+        <module>laoxiang-worker</module>
+        <module>laoxiang-soa</module>
+        <module>laoxiang-es</module>
+        <module>laoxiang-cache</module>
+        <module>laoxiang-common</module>
+        <module>laoxiang-domain</module>
+        <module>laoxiang-api</module>
+        <module>laoxiang-man</module>
     </modules>
 
     <dependencyManagement>
@@ -132,11 +132,6 @@
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
             <version>${jcl-over-slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.sf4j</groupId>
-            <artifactId>jul-to-slf4j</artifactId>
-            <version>${jul-to-slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
