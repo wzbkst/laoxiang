@@ -103,8 +103,13 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+            <!--<dependency>-->
+                <!--<groupId>org.mybatis.spring.boot</groupId>-->
+                <!--<artifactId>pagehelper-spring-boot-starter</artifactId>-->
+                <!--<version>${pagehelper.springboot.starter.version}</version>-->
+            <!--</dependency>-->
             <dependency>
-                <groupId>org.mybatis.spring.boot</groupId>
+                <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
                 <version>${pagehelper.springboot.starter.version}</version>
             </dependency>
