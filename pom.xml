@@ -35,7 +35,8 @@
         <jcl-over-slf4j.version>1.7.25</jcl-over-slf4j.version>
         <jul-to-slf4j.version>1.7.21</jul-to-slf4j.version>
         <log4j-over-slf4j.version>1.7.25</log4j-over-slf4j.version>
-        <!-- 内部 -->
+        <swagger.version>2.8.0</swagger.version>
+        <redis.springboot.starter.version>2.0.3.RELEASE</redis.springboot.starter.version>
     </properties>
 
     <groupId>com.qm.project</groupId>
@@ -69,7 +70,7 @@
                 <version>${bcprov-jdk15on.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alibaba</groupId>
+                <groupId>commons-lang</groupId>
                 <artifactId>commons-lang</artifactId>
                 <version>${commons-lang.version}</version>
             </dependency>
@@ -98,16 +99,21 @@
                 <artifactId>lombok</artifactId>
                 <version>${lombok.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
-            </dependency>
+            <!--<dependency>-->
+                <!--<groupId>com.google.guava</groupId>-->
+                <!--<artifactId>guava</artifactId>-->
+                <!--<version>${guava.version}</version>-->
+            <!--</dependency>-->
             <!--<dependency>-->
                 <!--<groupId>org.mybatis.spring.boot</groupId>-->
                 <!--<artifactId>pagehelper-spring-boot-starter</artifactId>-->
                 <!--<version>${pagehelper.springboot.starter.version}</version>-->
             <!--</dependency>-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${redis.springboot.starter.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.github.pagehelper</groupId>
                 <artifactId>pagehelper-spring-boot-starter</artifactId>
@@ -123,7 +129,26 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid.version}</version>
             </dependency>
-            <!-- 内部 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>fluent-hc</artifactId>
+                <version>${httpclient.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -132,7 +157,7 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback-classic.version}</version>
-        </dependency>
+</dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>

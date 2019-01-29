@@ -55,6 +55,9 @@
         <!--</table>-->
 
         <table tableName="user" domainObjectName="User" enableSelectByExample="true" enableUpdateByExample="true">
+            <!--<generateKey column="id" sqlStatement="MySql" identity="true" />-->
+        </table>
+        <table tableName="post_info" domainObjectName="PostInfo" enableSelectByExample="true" enableUpdateByExample="true">
             <!--<generateKey column="id" sqlStatement="MySql" identity="true" ></generateKey>-->
         </table>
         <table tableName="hometown" domainObjectName="Hometown" enableSelectByExample="true" enableUpdateByExample="true">
@@ -67,9 +70,6 @@
             <!--<generateKey column="id" sqlStatement="MySql" identity="true" ></generateKey>-->
         </table>
         <table tableName="region" domainObjectName="Region" enableSelectByExample="true" enableUpdateByExample="true">
-            <!--<generateKey column="id" sqlStatement="MySql" identity="true" ></generateKey>-->
-        </table>
-        <table tableName="region_hometown_link" domainObjectName="RegionHometownLink" enableSelectByExample="true" enableUpdateByExample="true">
             <!--<generateKey column="id" sqlStatement="MySql" identity="true" ></generateKey>-->
         </table>
         <table tableName="reply_info" domainObjectName="ReplyInfo" enableSelectByExample="true" enableUpdateByExample="true">
